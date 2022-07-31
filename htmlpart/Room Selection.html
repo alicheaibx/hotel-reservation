@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../csspart/Room_Selection.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="jumbotron text-center">
+    <section id="header">
+      <nav class="navbar navbar-expand-sm navbar-dark fixed-top ">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav mx-auto">
+
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Room Selection.html">Room Selection</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Aboutus.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Team.html">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact_us.html">Contact us</a>
+            </li>
+            <li class="nav-item">
+              <a id="logout" href="login.html" class="btn btn-primary" data-toggle="link" data-target="link">logout</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="intro">
+        <img src="logo.jpg" style="width: 90px;height: 100px">
+        <h1 style="color: white;">Select Your Room </h1>
+        <div class="row">
+          <div id="right-" class="col-sm-4 ">
+            <div id="data-fill">
+              <label class="control-label" for="name">
+                <h1>Room Data</h1>
+              </label>
+              <div id="roomdata">
+                <label class="control-label" for="name">
+                  <h5>guestname:</h5>
+                </label>
+                <div id="bookingdata">
+                  <input id="roomdata" type="text" name="Fullname" required id="Fullname" placeholder="Fullname ">
+                </div>
+                <label class="control-label" for="name">
+                  <h5>firstday:</h5>
+                </label>
+                <div id="bookingdata">
+                  <input id="roomdata" type="date" name="firstday" required id="firstday" placeholder="firstday ">
+                </div>
+                <label class="control-label" for="name">
+                  <h5>lastday:</h5>
+                </label>
+                <div id="bookingdata">
+                  <input id="roomdata" type="date" name="lastday" required id="lastday" placeholder="lastday ">
+                </div>
+              </div>
+              <div class="col-sm-12 " style="align-self: inline;">
+                <label class="control-label" for=">Number-of-people">
+                  <h5>Number of people:</h5>
+                </label>
+                <div>
+                  <br>
+                  <select id="bookingdata" class="form-control">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+
+                  </select>
+                </div>
+              </div>
+            </div>
+            <label class="control-label" for="name">
+              <h1>Filter</h1>
+            </label>
+            <div id=" filter">
+              <div class="col-sm-12 " style="align-self: inline;">
+                <label class="control-label" for=">Number-of-people">
+                  <h5>Room Type:</h5>
+                </label>
+                <div>
+                  <br>
+                  <select id="bookingfilter" class="form-control">
+                    <option>Single Bedroom</option>
+                    <option>master Bedroom</option>
+                    <option>suite</option>
+
+                  </select>
+                </div>
+              </div>
+              <div class="col-sm-12 " style="align-self: inline;">
+                <label class="control-label" for=">Number-of-people">
+                  <h5>Room Rank:</h5>
+                </label>
+                <div>
+                  <br>
+                  <select id="bookingfilter" class="form-control">
+                    <option>Silver</option>
+                    <option>Gold</option>
+                    <option>Premium</option>
+                    <option>Platnium</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="left-" class="col-sm-8">
+            <div id="roomdetails" >
+              <form action="../phppart/Showdetials.php">
+              <input type="submit" value="show rooms">
+            </div>
+            
+
+          </div>
+        </div>
+      </div>
+  </div>
+
+  </section>
+
+  <fdiv class="footer">
+    <div class="inner-footer">
+      <div class="social-links row">
+        <ul>
+          <li class="social-items"><a href="#"><i class="fab fa-facebook"></i></i></a></li>
+          <li class="social-items"><a href="#"><i class="fab fa-instagram"></i></i></a></li>
+          <li class="social-items"><a href="#"><i class="fab fa-twitter"></i></i></a></li>
+
+        </ul>
+      </div>
+      <div id="mover">
+        <div class="quick-links row">
+          <ul>
+            <li class="quick-items col-lg-3 col-md-3 col-sm-3"><a href="home.html">Home</a></li>
+            <li class="quick-items col-lg-3 col-md-3 col-sm-3"><a href="Aboutus.html">About Us</a></li>
+            <li class="quick-items col-lg-3 col-md-3 col-sm-3"><a href="Team.html">Team</a></li>
+            <li class="quick-items col-lg-3 col-md-3 col-sm-3"><a href="contact_us.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="outer-footer">
+      Copyright &copy; Web coding Pro. All Rights Reserved
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../csspart/admin.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>adminpage</title>
+</head>
+
+<body>
+
+  <div class="jumbotron text-center">
+    <section id="header">
+      <nav class="navbar navbar-expand-sm navbar-dark fixed-top ">
+        <a id="logout" href="login.html" class="btn btn-primary" data-toggle="link" data-target="link">logout</a>
+      </nav>
+      <div>
+        <a id="feedbackbtn" href="#" class="btn btn-primary" data-toggle="modal" data-target="#Addemployee">Add Employee</a>
+      </div>
+      <div>
+        <a id="feedbackbtn" href="#" class="btn btn-primary" data-toggle="modal" data-target="#AddRoom">Add Room</a>
+      </div>
+      <div>
+        <a id="feedbackbtn" href="#" class="btn btn-primary" data-toggle="modal" data-target="#deleteEmp">Delete Employee</a>
+      </div>
+      <div>
+        <a id="feedbackbtn" href="#" class="btn btn-primary" data-toggle="modal" data-target="#deleteRoom">Delete Room</a>
+      </div>
+     
+      <div>
+        <form action="../phppart/ShowEmp.php" method="get">
+          <input type="submit" value="Show Employee" class="btn btn-primary">
+          </form>
+      </div>
+      <div>
+        <form action="../phppart/ShowRoom.php" method="get">
+          <input type="submit" value="Show Room" class="btn btn-primary">
+          </form>
+      </div>
+      <div>
+        <form action="../phppart/ShowFeedback.php" method="get">
+          <input type="submit" value="Show Feedback" class="btn btn-primary">
+          </form>
+      </div>
+  </div>
+  </section>
+  <!-- Modal -->
+  <div class="modal fade" id="Addemployee" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div id="modalbody" class="modal-body">
+          <form action="../phppart/addemployee.php" method="post">
+            <div class="form-group">
+              <label class="control-label" for="username">
+                <h5>First Name:</h5>
+              </label>
+              <div>
+                <input type="text" class="form-control" id="firstname" placeholder="firstname " name="firstname"
+                  required>
+                <label class="control-label" for="username">
+                  <h5>LastName:</h5>
+                </label>
+                <input type="text" class="form-control" id="lastname" placeholder="lastname " name="lastname" required>
+              </div>
+            </div>
+            <br><br>
+            <div class="form-group">
+              <label class="control-label" for="email">
+                <h5>Email</h5>
+              </label>
+              <div>
+                <input type="text" class="form-control" id="email" placeholder="Example@gmail.com " name="Email"
+                  required>
+
+              </div>
+              <label class="control-label" for="phone">
+                <h5>phone</h5>
+              </label>
+              <div>
+                <input type="tel" class="form-control" id="Phone" placeholder="+961-------- " name="Phone" required>
+
+              </div>
+
+              <label class="control-label" for="Facebook">
+                <h5>facebook</h5>
+              </label>
+              <div>
+                <input type="text" class="form-control" id="Facebook" placeholder="Example@gmail.com " name="Facebook">
+
+              </div>
+              <label class="control-label" for="instagram">
+                <h5>instagram</h5>
+              </label>
+              <div>
+                <input type="text" class="form-control" id="Instagram" placeholder="Example@gmail.com "
+                  name="Instagram">
+
+              </div>
+              <label class="control-label" for="Twitter">
+                <h5>Twitter</h5>
+              </label>
+              <div>
+                <input type="text" class="form-control" id="Twitter" placeholder="Example@gmail.com " name="Twitter">
+              </div>
+
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2">
+                <button type="submit" class="btn btn-primary">Add Emmployee</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="AddRoom" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div id="modalbody" class="modal-body">
+          <form action="../phppart/addroom.php" method="post">
+            <div class="form-group">
+              <label class="control-label" for="RoomNumber">
+                <h5>RoomNumber</h5>
+              </label>
+              <div>
+                <input type="number" name="room_Number" required id="room_Number" placeholder="RoomNumber">
+              </div>
+              <label class="control-label" for="Nb_of_Person">
+                <h5>Number of Person</h5>
+              </label>
+              <div>
+                <input type="number" name="Nb_of_Person" required id="Nb_of_Person" placeholder="Nb_of_Person">
+              </div>
+              <label class="control-label" for="Type">
+                <h5>Type</h5>
+              </label>
+              <div>
+                <input type="text" name="room_Type" required id="room_Type" placeholder="Type">
+              </div>
+              <label class="control-label" for="Price">
+                <h5>Price</h5>
+              </label>
+              <div>
+                <input type="number" name="price" id="price" placeholder="Price">
+              </div>
+              <label class="control-label" for="Rank">
+                <h5>Rank</h5>
+              </label>
+              <div>
+                <input type="text" name="room_Rank" id="room_Rank" placeholder="Rank">
+              </div>
+
+              <label class="control-label" for="username"><h5>Detials</h5></label>
+              <div>
+             <textarea class="form-control" rows="5" id="detial" name="detial" placeholder="Write your detial here"></textarea><br>
+             </div>
+              <br><br>
+            </div>
+        
+
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-2">
+          <button type="submit" class="btn btn-primary">Add Room</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+  </div>
+</div>
+</div>
+</div>
+
+ <!-- Modal -->
+ <div class="modal fade" id="deleteEmp" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div id="modalbody" class="modal-body">
+        <form action="../phppart/deleteEmp.php" method="post">
+          <div class="form-group">
+            <label class="control-label" for="username">
+              <h5>Email:</h5>
+            </label>
+            <div>
+              <input type="text" class="form-control" id="Email" placeholder="Email " name="Email"required>
+
+          </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-2">
+              <button type="submit" class="btn btn-primary">Delete Employee</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ <!-- Modal -->
+ <div class="modal fade" id="deleteRoom" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div id="modalbody" class="modal-body">
+        <form action="../phppart/deleteRoom.php" method="post">
+          <div class="form-group">
+            <label class="control-label" for="username">
+              <h5>Room Number:</h5>
+            </label>
+            <div>
+              <input type="text" class="form-control" id="room_Number" placeholder="room_Number" name="room_Number"required>
+
+          </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-2">
+              <button type="submit" class="btn btn-primary">Delete Room</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <fdiv class="footer">
+    <div class="inner-footer">
+      <div class="social-links row">
+        <ul>
+          <li class="social-items"><a href="#"><i class="fab fa-facebook"></i></i></a></li>
+          <li class="social-items"><a href="#"><i class="fab fa-instagram"></i></i></a></li>
+          <li class="social-items"><a href="#"><i class="fab fa-twitter"></i></i></a></li>
+
+        </ul>
+      </div>
+      <div id="mover">
+        <div class="quick-links row">
+          <ul>
+            <li class="quick-items col-lg-3 col-md-3 col-sm-3"><a href="home.html">Home</a></li>
+            <li class="quick-items col-lg-3 col-md-3 col-sm-3"><a href="Aboutus.html">About Us</a></li>
+            <li class="quick-items col-lg-3 col-md-3 col-sm-3"><a href="Team.html">Team</a></li>
+            <li class="quick-items col-lg-3 col-md-3 col-sm-3"><a href="contact_us.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="outer-footer">
+      Copyright &copy; Web coding Pro. All Rights Reserved
+    </div>
+</body>
+
+</html>

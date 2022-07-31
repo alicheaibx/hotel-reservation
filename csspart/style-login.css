@@ -1,0 +1,73 @@
+*{margin: 0;
+    padding: 0;
+    }
+   
+    .jumbotron{
+    background-image: url('../images/hotelbackground.jpg');
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    color: black;
+    border-radius: 0px!important;
+    height: fit-content;
+    }
+    .jumbotron h1{
+        margin: 30px 0;
+        font-size: 30px;
+        line-height: 1.5;
+    
+    }
+    div#loginform{
+        color: white;
+        margin: 0 auto;
+     
+    }
+    div#fillin-login{
+        width: 200px;
+        height: 30px;
+        border: none;  
+        border-radius: 3px;  
+        margin: 0 auto;
+    }
+    a{    
+    color: white;
+    background-color: rgba(0, 0, 0, 0.44);
+    border: none;  
+    border-radius: 20px;  
+    }
+    #login{  
+        width: 300px;  
+        height: 30px;  
+        border: none;  
+        border-radius: 25px;  
+        padding-left: 7px;  
+        color: white;
+        background-color: rgb(221, 200, 9);  
+      
+    }  
+    #login:hover{  
+        width: 300px;  
+        height: 30px;  
+        border: none;  
+        border-radius: 25px;  
+        padding-left: 7px;  
+        color: rgb(221, 200, 9);
+        background-color: rgb(19, 17, 2);  
+      
+    }  
+    a:hover{    
+        color: rgb(22, 2, 2);
+        background-color: rgb(194, 9, 9);
+        border: none;  
+        border-radius: 20px;  
+        }
+
+  
+
+span{  
+    color: rgb(252, 248, 248);  
+   background-color: rgba(0, 0, 0, 0.50);
+    font-size: 17px;  
+}  
+
+

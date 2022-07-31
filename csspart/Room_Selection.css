@@ -1,0 +1,205 @@
+*{margin: 0;
+    padding: 0;
+    }
+    .navbar{
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .jumbotron{
+    background-image: url('../images/hotelbackground.jpg');
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    color: black;
+    border-radius: 0px!important;
+    height: fit-content;
+    }
+    .jumbotron h1{
+        margin: 30px 0;
+        font-size: 30px;
+        line-height: 1.5;
+    
+    }
+    .intro{padding-top: 160px;}
+.navbar-nav a{
+    color: red!important;
+    margin: 0 20px;
+    margin-top: 30px;
+}
+.navbar-toggler{
+    color: white!important;
+    border: none!important;
+    outline: none!important;
+}
+a#logout{
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 5px darkred;}
+    .navbar-toggler .fa{
+        color: gold;
+        font-size: 26px;
+    
+    }
+    .navbar-link:hover{
+        font-weight: 600;
+        border-bottom: 1px solid goldenrod;
+        margin-bottom: -1px;
+    }
+    a#logout:hover{
+        background-color: rgb(214, 154, 25);
+        border: 5px rgb(134, 0, 0);
+    }
+    .navbar-nav a:hover{
+        background-color: rgba(0, 0, 0, 0.35);
+            margin: 0 20px;
+            margin-top: 30px;
+        }
+     div#right-{
+     border: 7px solid gray;
+     background-color: darkred;
+     margin: 0 auto;
+     width: fit-content;
+     float: left;
+     color: darkgoldenrod;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     
+     }
+     select#bookingdata{
+         width: 200px;
+         margin: 0 auto;
+     }
+     select#bookingfilter{
+        width: 200px;
+        margin: 0 auto;
+        
+    }
+  
+    input#roomdata{
+        width: 200px;
+        margin: 0 auto;
+    }
+    img#slide{
+        width: 250px;
+        height: 250px;
+    }
+    div#room1{
+        width: 270px;
+        height: 270px;
+    }
+    div#room2{
+        width: 270px;
+        height: 270px;
+    }
+    div#room3{
+        width: 270px;
+        height: 270px;
+    }
+    div#room4{
+        width: 270px;
+        height: 270px;
+    }
+    div#roomdetails{
+        border: 3px  solid gray;
+        background-color: darkslategrey;
+        color: darkgoldenrod;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        
+    }
+    div#left-{
+        float: right;
+        margin: 0 auto;
+        width: fit-content;
+        color: darkgoldenrod;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    
+.inner-footer{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.social-links{
+    text-align:center;   
+}
+
+.social-links ul{
+    padding: 20px;
+    display: flex;
+    width: 300px;
+    height: 30px;
+    margin: auto;
+}
+
+.social-items{
+    list-style: none;   
+    display: Inline-block;
+}
+
+.social-items a{
+    padding: 10px 20px;
+    font-size: 35px;
+    color: white;
+    transition: all .25s;
+}
+
+.social-items a:hover{
+    color: red;
+}
+
+
+.quick-links{
+    display: flex;
+    width: 560px;
+    height: 70px;
+    margin: auto;
+}
+
+.quick-links ul{
+    display: flex;
+}
+.quick-items{
+    list-style: none;
+}
+
+.quick-items a{
+    text-decoration: none;
+    padding: 0px 15px;
+    font-size: 20px;
+    color: white;
+    transition: all .25s;
+}
+
+.quick-items a:hover{
+    color: red;
+}
+
+.outer-footer{
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    background-color: #3f3f3f;
+}
+
+.quick-links{
+    margin-top: 30px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+div.footer{
+   margin-top: 40px;
+   text-align: center;
+   height: fit-content;
+
+   
+}
+.social-items{
+    margin: 0 auto;
+}
+div#mover{
+    margin: 0 auto;
+    width: fit-content;
+}

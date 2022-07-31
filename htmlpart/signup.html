@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <link rel="stylesheet" href="../csspart/style-signup.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+</head>
+
+<body>
+    <div class="jumbotron text-center">
+        <section id="header">
+    <h1>Sign up</h1>
+    <div id="signupform" class="col-sm-12 col-md-3 col-lg-4">
+        <form action="../phppart/signup.php" method="post">
+           
+<div id="row" >
+    <div style="float: left;">
+    <label class="control-label" for="firstname">
+        <h5>First Name:</h5>
+    </label>
+    <br>
+    
+    <div id="fill-in-signup"> 
+      <input type="text" name="Firstname"required id="Firstname" placeholder="First Name">
+    </div>
+</div>
+<div style="float: right;">
+                <label class="control-label" for="lastname">
+                    <h5>Last Name:</h5>
+                </label>
+               
+               
+                <div id="fill-in-signup">
+                    <input  type="text" name="Lastname" required id="Lastname" placeholder="Last name">
+                </div>
+            </div>
+        </div>
+       
+                <div class="form-group">
+                <label class="control-label" for="email">
+                    <h5>Email:</h5>
+                </label>
+                <div id="fill-in-signup">
+                    <input type="email" name="Email" required id="Email" placeholder="Email">
+                </div>
+
+                <label class="control-label" for="phone">
+                    <h5>phone:</h5>
+                </label>
+                <div id="fill-in-signup">
+                    <input type="tel" name="Phone" required id="Phone" placeholder="Phone">
+                </div>
+
+                <label class="control-label" for="password">
+                    <h5>Password:</h5>
+                </label>
+                <div id="fill-in-signup">
+                    <input type="password" name="Password" required id="Password" placeholder="Password">
+                </div>
+
+                <label class="control-label" for="confirm Password">
+                    <h5>confirm Password:</h5>
+                </label>
+                <div id="fill-in-signup">
+                    <input type="password" name="confirm-Password" required id=" confirm-Password"
+                        placeholder="confirm Password">
+                </div>
+
+                <div>
+                 
+                    <input type="submit" id="signup"  class="btn btn-primary" >
+
+                    <a href="login.html">or Log in here</a>
+                
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+</section>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+*{margin: 0;
+    padding: 0;
+    }
+    .navbar{
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .jumbotron{
+    background-image: url('../images/hotelbackground.jpg');
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    color: black;
+    border-radius: 0px!important;
+    height: fit-content;
+    }
+    .jumbotron h1{
+        margin: 30px 0;
+        font-size: 30px;
+        line-height: 1.5;
+    
+    }
+
+
+   
+  
+div#row{
+    text-align: left;
+    width: 400px;
+    text-align: left;
+    margin: 0 auto; 
+    color: white;
+}
+div#signupform{
+    color: white;
+    margin: 0 auto;
+ 
+}
+div#fill-in-signup{
+    width: 200px;
+    height: 30px;
+    border: none;  
+    border-radius: 3px;  
+    margin: 0 auto;
+}
+a{    
+color: white;
+background-color: rgba(0, 0, 0, 0.44);
+border: none;  
+border-radius: 20px;  
+}
+#signup{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 25px;  
+    padding-left: 7px;  
+    color: white;
+    background-color: rgb(221, 200, 9);  
+  
+}  
+#signup:hover{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 25px;  
+    padding-left: 7px;  
+    color: rgb(221, 200, 9);
+    background-color: rgb(19, 17, 2);  
+  
+}  
+a:hover{    
+    color: rgb(22, 2, 2);
+    background-color: rgb(194, 9, 9);
+    border: none;  
+    border-radius: 20px;  
+    }
